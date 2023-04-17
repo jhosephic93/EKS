@@ -45,6 +45,12 @@ $ eksctl create iamidentitymapping --cluster myk8scluster --region=us-east-1 --a
 $ kubectl describe configmap aws-auth -n kube-system #Desde BastionHost
 ```
 
+4. Eliminar cluster de EKS
+
+```console
+$ eksctl delete cluster -f cluster-eks.yaml --profile jhoseph
+```
+
 - Video creacion mediante EKSCTL
 - Video creacion meidante Consola con Fargate
 - More info -> <https://eksctl.io/usage/dry-run/>
